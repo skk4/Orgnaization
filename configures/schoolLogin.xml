@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="school_login_suite" parallel="tests" thread-count="2">
+
+<test name="用户名正常登陆">
+ 	
+    <classes>
+      <class name="com.school.test.SchoolLoginTest">
+      	<methods>
+      	    <parameter name="user_name" value="t-mgdz3-00001"></parameter>
+			<parameter name="pass_word" value="123456"></parameter>
+			<parameter name="name" value="美国队长"></parameter>
+      		<include name="loginNormal"></include>
+      		
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+
+
+<test name="手机号正常登陆">
+ 	
+    <classes>
+      <class name="com.school.test.SchoolLoginTest">
+      	<methods>
+      	    <parameter name="user_name" value="18250890422"></parameter>
+			<parameter name="pass_word" value="123456"></parameter>
+			<parameter name="name" value="李楠"></parameter>
+      		<include name="loginNormal"></include>
+      		
+      	</methods>
+      </class>
+    </classes>
+  </test>
+
+
+<test name="邮箱正常登陆">
+ 	
+    <classes>
+      <class name="com.school.test.SchoolLoginTest">
+      	<methods>
+      	    <parameter name="user_name" value="1908926708@qq.com"></parameter>
+			<parameter name="pass_word" value="123456"></parameter>
+			<parameter name="name" value="李楠"></parameter>
+      		<include name="loginNormal"></include>
+      		
+      	</methods>
+      </class>
+    </classes>
+  </test>
+
+
+<test name="退出登录">
+ 	 
+    <classes>
+      <class name="com.school.test.SchoolLoginTest">
+      	<methods>
+      	    <parameter name="user_name" value="t-mgdz3-00001"></parameter>
+			 <parameter name="pass_word" value="123456"></parameter>
+      		<include name="logout"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+  
+
+
+
+ <test name="空用户名登陆">
+ 	
+    <classes>
+      <class name="com.school.test.SchoolLoginTest">
+      	<methods>
+      	 
+			<parameter name="pass_word" value="123456"></parameter>
+			
+      		<include name="loginNullUsername"></include>
+      		
+      	</methods>
+      </class>
+    </classes>
+  </test>  
+  
+  
+  <test name="空密码登陆">
+ 	
+    <classes>
+      <class name="com.school.test.SchoolLoginTest">
+      	<methods>
+      	 
+			<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+			
+      		<include name="loginNullpassword"></include>
+      		
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+ 
+  
+  
+  <test name="错误用户名登陆">
+ 	
+    <classes>
+      <class name="com.school.test.SchoolLoginTest">
+      	<methods>
+			<parameter name="user_name" value="t-mgdz3-0001"></parameter>
+      		<include name="loginWrUsername"></include>
+      		
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+  
+    <test name="错误密码登陆">
+ 	
+    <classes>
+      <class name="com.school.test.SchoolLoginTest">
+      	<methods>
+      	 
+			<parameter name="pass_word" value="1234567"></parameter>
+			
+      		<include name="loginWrpassword"></include>
+      		
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+ 
+  
+</suite> <!-- Suite -->

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="group_suite" parallel="tests" thread-count="2">
+
+     <test name="移除学生">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.group.GroupTest">
+      	<methods>
+      	   <parameter name="group_name" value="高二"></parameter>
+      	    <parameter name="student_name" value="学生102"></parameter>
+      	    
+      		<include name="removeStudent"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>    
+    
+ <test name="查看学生">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.group.GroupTest">
+      	<methods>
+      	   <parameter name="group_name" value="高二"></parameter>
+      	    <parameter name="student_name" value="学生103"></parameter>
+      	    
+      		<include name="checkStudent"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>    
+ 
+ 
+    
+      
+  <test name="添加学生">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.group.GroupTest">
+      	<methods>
+      	    <parameter name="grade_name" value="初一"></parameter>
+      	    <parameter name="class_name" value="2013级2班"></parameter>
+      	    <parameter name="student_name" value="学生1001"></parameter>
+      	    <parameter name="group_name" value="测试群"></parameter>
+      		<include name="addStudent"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>    
+   
+  
+<test name="删除群">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.group.GroupTest">
+      	<methods>
+      	    <parameter name="group_name" value="蜘蛛侠"></parameter>
+      		<include name="deleteGroup"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>        
+    
+   
+  <test name="renameGroupName">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.group.GroupTest">
+      	<methods>
+      	  
+      	   
+      	    <parameter name="group_name" value="群组人数"></parameter>
+      	    <parameter name="new_group_name" value="群组"></parameter>
+      		<include name="renameGroupName"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>     
+    
+    
+   
+
+    
+  <test name="导出学生列表">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.group.GroupTest">
+      	<methods>
+      	   
+      	    <parameter name="group_name" value="初一"></parameter>
+      	    
+      		<include name="exportStudentsList"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+   
+</suite> <!-- Suite -->

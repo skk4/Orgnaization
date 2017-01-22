@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="coursemanage_suite" parallel="tests" thread-count="2">
+
+
+    <test name="验证默认的两个专辑">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+      	    
+      		<include name="checkDefaultFileDirectory"></include>
+      	</methods>
+      </class>      
+    </classes>    
+  </test> 
+
+  
+  
+ <test name="新建专辑">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+      	    <parameter name="album_name" value="新建专辑"></parameter>
+      		<include name="addAlbum"></include>
+      	</methods>
+      </class>      
+    </classes>    
+  </test>
+ 
+   
+ <test name="重命名专辑">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+      	    <parameter name="album_name" value="重命名专辑"></parameter>
+      	    <parameter name="new_album_name" value="新命名专辑"></parameter>
+      		<include name="renameAlbum"></include>
+      	</methods>
+      </class>      
+    </classes>    
+  </test>   
+
+  
+   <test name="删除专辑">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+      	    <parameter name="album_name" value="删除专辑"></parameter>
+      	    
+      		<include name="deleteAlbum"></include>
+      	</methods>
+      </class>      
+    </classes>    
+  </test> 
+ 
+     <test name="发送专辑">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+      	    <parameter name="album_name" value="发送专辑"></parameter>
+      	    <parameter name="group_name" value="测试群"></parameter>
+      		<include name="sendAlbum"></include>
+      	</methods>
+      </class>      
+    </classes>    
+  </test> 
+  
+ <test name="制作微课">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+      	    <parameter name="album_name" value="我的专辑"></parameter>
+      	    
+      		<include name="makeMicroCourse"></include>
+      	</methods>
+      </class>      
+    </classes>    
+  </test>  
+  
+      <test name="上传本地资源">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+     		<parameter name="album_name" value="我的专辑"></parameter>
+     		<parameter name="resource_url" value="F:\\WebAutomation\\1.jpg"></parameter>
+      		<include name="uploadLocalResource"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+        <test name="预览">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+     		<parameter name="album_name" value="我的专辑"></parameter>
+     		<parameter name="resource_name" value="预览资源"></parameter>
+      		<include name="preview"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+   <test name="发送">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+     		<parameter name="album_name" value="我的专辑"></parameter>
+     		<parameter name="resource_name" value="发送资源"></parameter>
+     		<parameter name="group_name" value="测试群"></parameter>
+      		<include name="send"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>      
+
+   
+<test name="重命名资源">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+     		<parameter name="album_name" value="我的专辑"></parameter>
+     		<parameter name="resource_name" value="重命名资源"></parameter>
+     		<parameter name="new_res_name" value="新命名资源"></parameter>
+      		<include name="rename"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>    
+
+  <test name="移动">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+     		<parameter name="album_name" value="我的专辑"></parameter>
+     		<parameter name="resource_name" value="移动资源"></parameter>
+     		<parameter name="new_album" value="测试专辑"></parameter>
+      		<include name="move"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+<test name="删除资源">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+     		<parameter name="album_name" value="我的专辑"></parameter>
+     		<parameter name="resource_name" value="删除资源"></parameter>
+     		
+      		<include name="delete"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+
+ <test name="发布微课">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+     		<parameter name="album_name" value="我的专辑"></parameter>
+     		<parameter name="resource_name" value="发布互动微课"></parameter>
+     		<parameter name="first_column" value="语文"></parameter>
+     		<parameter name="sec_column" value="二级语文"></parameter>
+      		<include name="publish"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+<test name="取消发布微课">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.AlbumTest">
+      	<methods>
+     		<parameter name="album_name" value="我的专辑"></parameter>
+     		<parameter name="resource_name" value="取消发布微课"></parameter>
+     		
+      		<include name="cancelPublish"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+
+ <test name="创建课程">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="新建课程"></parameter>
+     		<parameter name="course_desc" value="自动化测试新建课程"></parameter>
+     		<parameter name="pic_url" value="F:\\WebAutomation\\1.jpg"></parameter>
+      		<include name="addCourse"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+
+
+ <test name="预览课程">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="预览课程"></parameter>
+     		
+      		<include name="previewCourse"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+ 
+<test name="编辑课程">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="编辑课程"></parameter>
+     		
+      		<include name="editCourse"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+  
+
+<test name="发送课程">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="发送课程"></parameter>
+     		<parameter name="group_name" value="测试群"></parameter>
+      		<include name="sendCourse"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+
+ <test name="发布课程">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="发布课程"></parameter>
+     		<parameter name="first_col" value="语文"></parameter>
+     		<parameter name="sec_col" value="二级语文"></parameter>
+      		<include name="publishCourse"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+  <test name="取消发布课程">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="高等数学"></parameter>
+     		
+      		<include name="cancelpublishCourse"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+ 
+     <test name="创建同级目录">
+ 	<parameter name="user_name" value="t-mgdz3-00002"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="目录测试"></parameter>
+     		<parameter name="parent_menu" value="第一章"></parameter>
+     		<parameter name="menu_name" value="第二章"></parameter>
+      		<include name="creatSameMenu"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+     
+    <test name="创建子目录">
+ 	<parameter name="user_name" value="t-mgdz3-00002"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="目录测试"></parameter>
+     		<parameter name="parent_menu" value="第一章"></parameter>
+     		<parameter name="menu_name" value="第一节"></parameter>
+      		<include name="creatChildMenu"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+  
+    
+    
+       <test name="删除目录">
+ 	<parameter name="user_name" value="t-mgdz3-00002"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="目录测试"></parameter>
+     		
+     		<parameter name="menu_name" value="第三章"></parameter>
+      		<include name="deleteMenu"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+    
+     <test name="删除子目录">
+ 	<parameter name="user_name" value="t-mgdz3-00002"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="目录测试"></parameter>
+     		<parameter name="parent_menu" value="第四章"></parameter>
+     		<parameter name="menu_name" value="第一节"></parameter>
+      		<include name="deleteChildMenu"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+     
+     <test name="编辑目录">
+ 	<parameter name="user_name" value="t-mgdz3-00002"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="目录测试"></parameter>
+     		<parameter name="parent_name" value="第5章"></parameter>
+     		<parameter name="new_name" value="第五章"></parameter>
+     		
+      		<include name="editMenu"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>  
+     
+<test name="编辑子目录">
+ 	<parameter name="user_name" value="t-mgdz3-00002"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="目录测试"></parameter>
+     		<parameter name="parent_name" value="第六章"></parameter>
+     		<parameter name="child_name" value="第1节"></parameter>
+     		<parameter name="new_name" value="第一节"></parameter>
+      		<include name="editChildMenu"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+     
+  <test name="上传课程资源">
+ 	<parameter name="user_name" value="t-mgdz3-00002"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="测试专用"></parameter>
+     		<parameter name="parent_menu" value="第一章"></parameter>
+     		<parameter name="child_menu" value="第一节"></parameter>
+     		<parameter name="resource_url" value="F:\\WebAutomation\\2.png"></parameter>
+     		<parameter name="resource_name" value="2.png"></parameter>
+      		<include name="upload"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+  
+  <test name="删除课程资源">
+ 	<parameter name="user_name" value="t-mgdz3-00002"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="测试专用"></parameter>
+     		<parameter name="parent_menu" value="第一章"></parameter>
+     		<parameter name="child_menu" value="第一节"></parameter>
+     		<parameter name="resource_name" value="race_car.jpg"></parameter>
+      		<include name="deleteResource"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+   
+
+  
+      
+<test name="课程添加微课">
+ 	<parameter name="user_name" value="t-mgdz3-00002"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="测试专用"></parameter>
+     		<parameter name="parent_menu" value="第一章"></parameter>
+     		<parameter name="album_name" value="我的专辑"></parameter>
+     		<parameter name="micro_c_name" value="我的微课"></parameter>
+      		<include name="addMircoCourse"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+     
+
+    <test name="重命名课程">
+ 	<parameter name="user_name" value="t-mgdz3-00002"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.coursemanage.CourseManageTest">
+      	<methods>
+     		<parameter name="course_name" value="编辑课程"></parameter>
+     		<parameter name="new_course_name" value="编辑后课程"></parameter>
+     		<parameter name="course_desc" value="abcdefg"></parameter>
+     		<parameter name="pic_url" value="F:\\WebAutomation\\1.jpg"></parameter>
+      		<include name="editAndSaveCourse"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+
+  
+</suite> <!-- Suite -->

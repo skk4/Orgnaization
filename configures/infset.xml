@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="information_set_suite" parallel="tests" thread-count="2">
+
+  
+ <test name="修改个人信息">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.PersonalCenterTest">
+      	<methods>
+      	    <parameter name="personal_name" value="美国队长"></parameter>
+      	    <parameter name="personal_sex" value="女"></parameter>
+      		<include name="personalDetails"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>  
+
+ 
+<test name="绑定邮箱">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.PersonalCenterTest">
+      	<methods>
+      	    
+      	    <parameter name="email" value="3238089520@qq.com"></parameter>
+      		<include name="bandingEmail"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+ 
+
+<test name="绑定手机">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.PersonalCenterTest">
+      	<methods>
+      	    
+      	    <parameter name="mobile_number" value="18205990013"></parameter>
+      		<include name="bandingMobile"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+
+
+
+ <test name="重置密码">
+ 	<parameter name="user_name" value="t-mgdz3-00003"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.PersonalCenterTest">
+      	<methods>
+      	    <parameter name="old_pwd" value="123456"></parameter>
+      	    <parameter name="new_pwd" value="654321"></parameter>
+      		<include name="resetPassword"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

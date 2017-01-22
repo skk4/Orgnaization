@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="host_url" value="http://school.test.yoya.com/"/>
+  <parameter name="user_name" value="xal-00001"/>
+  <parameter name="pass_word" value="123456"/>
+  <test name="loginNormal(failed)">
+    <parameter name="user_name" value="xal-00001"/>
+    <parameter name="pass_word" value="123456"/>
+    <classes>
+      <class name="com.school.test.SchoolLoginTest">
+        <methods>
+          <include name="loginNormal"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.school.test.SchoolLoginTest -->
+    </classes>
+  </test> <!-- loginNormal(failed) -->
+  <test name="logout(failed)">
+    <parameter name="user_name" value="xal-00001"/>
+    <parameter name="pass_word" value="123456"/>
+    <classes>
+      <class name="com.school.test.SchoolLoginTest">
+        <methods>
+          <include name="logout"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.school.test.SchoolLoginTest -->
+    </classes>
+  </test> <!-- logout(failed) -->
+</suite> <!-- Failed suite [Suite] -->

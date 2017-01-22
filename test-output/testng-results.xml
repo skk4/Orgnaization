@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="229011" started-at="2016-11-02T08:15:34Z" finished-at="2016-11-02T08:19:23Z">
+    <groups>
+    </groups>
+    <test name="mobileBinding" duration-ms="133062" started-at="2016-11-02T08:15:34Z" finished-at="2016-11-02T08:17:47Z">
+      <class name="com.yoya.test.accountset.SecurityCenterTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.yoya.test.accountset.SecurityCenterTest@48e4374]" name="beforeTest" is-config="true" duration-ms="48911" started-at="2016-11-02T16:15:34Z" finished-at="2016-11-02T16:16:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.yoya_auto.com/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lntest2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="mobileBinding(java.lang.String)[pri:0, instance:com.yoya.test.accountset.SecurityCenterTest@48e4374]" name="mobileBinding" duration-ms="76759" started-at="2016-11-02T16:16:23Z" finished-at="2016-11-02T16:17:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18606002183]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileBinding -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.yoya.test.accountset.SecurityCenterTest@48e4374]" name="afterTest" is-config="true" duration-ms="7317" started-at="2016-11-02T16:17:39Z" finished-at="2016-11-02T16:17:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.yoya.test.accountset.SecurityCenterTest -->
+    </test> <!-- mobileBinding -->
+    <test name="registerYoyaViaMobile" duration-ms="95787" started-at="2016-11-02T08:17:47Z" finished-at="2016-11-02T08:19:23Z">
+      <class name="com.yoya.test.login.RegisterTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.yoya.test.login.RegisterTest@9353778]" name="beforeTest" is-config="true" duration-ms="22566" started-at="2016-11-02T16:17:47Z" finished-at="2016-11-02T16:18:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.yoya_auto.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="registerYoyaViaMobile(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.yoya.test.login.RegisterTest@9353778]" name="registerYoyaViaMobile" duration-ms="71694" started-at="2016-11-02T16:18:09Z" finished-at="2016-11-02T16:19:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lntest3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[18205990013]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerYoyaViaMobile -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.yoya.test.login.RegisterTest@9353778]" name="afterTest" is-config="true" duration-ms="1523" started-at="2016-11-02T16:19:21Z" finished-at="2016-11-02T16:19:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.yoya.test.login.RegisterTest -->
+    </test> <!-- registerYoyaViaMobile -->
+  </suite> <!-- Suite -->
+</testng-results>

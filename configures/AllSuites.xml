@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="all_suite" >
+    <listeners>
+        <listener class-name="com.school.listener.TestResultListener"></listener>
+    </listeners>
+    
+     <parameter name="host_url" value="http://school.yoya_auto.com/school/"></parameter> 
+    <suite-files>
+        <suite-file path="./configures/schoolLogin.xml"></suite-file>
+        <suite-file path="./configures/infset.xml"></suite-file>
+        <suite-file path="./configures/coursemanage.xml"></suite-file> 
+        <suite-file path="./configures/theme.xml"></suite-file> 
+        <suite-file path="./configures/group.xml"></suite-file> 
+       <!--  <suite-file path="./configures/basicManage.xml"></suite-file>  -->
+    </suite-files>
+    
+</suite>

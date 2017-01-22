@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="theme_suite" parallel="tests" thread-count="2">
+
+
+ <test name="发布活动">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.theme.ThemeActivityTest">
+      	<methods>
+      	   
+      	    <parameter name="theme_title" value="活动标题"></parameter>
+      	    <parameter name="activity_desc" value="活动的详细介绍。。。。"></parameter>
+      	    <parameter name="appendix_url" value="F:\\WebAutomation\\2.png"></parameter>
+      		<parameter name="group_name" value="初一"></parameter>
+      		<parameter name="deadline" value="2017-12-30"></parameter>
+      		<include name="realeaseActivity"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>  
+
+ <test name="查看过期活动">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.theme.ThemeActivityTest">
+      	<methods>
+      	   
+      	    <parameter name="activity_name" value="测试学生提交作品"></parameter>
+      	    
+      		<include name="reviewexpiryActiviry"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+
+
+</suite> <!-- Suite -->

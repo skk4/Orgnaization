@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="message_suite" >
+
+<test name="assertMessagePage">
+ 	<parameter name="user_name" value="t-daida-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.message.MessageTest">
+      	<methods>
+      		<include name="assertMessagePage"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+
+</suite> <!-- Suite -->

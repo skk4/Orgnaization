@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="basic_manage_suite" parallel="tests" thread-count="2">
+
+
+ <!--     
+    <test name="editDepartment">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.basicmanage.DepartmentManageTest">
+      	<methods>
+      	    <parameter name="dept_name" value="钢铁侠"></parameter>
+      	    <parameter name="new_dept_name" value="钢铁侠123"></parameter>
+      		<include name="editDepartment"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>   
+    
+    
+  <test name="addSubDepartment">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.basicmanage.DepartmentManageTest">
+      	<methods>
+      	    <parameter name="dept_name" value="钢铁侠123"></parameter>
+      	    <parameter name="sub_dept_name" value="123"></parameter>
+      		<include name="addSubDepartment"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>   
+    
+ 
+
+ 
+    
+    <test name="deleteDeparmentWithMembers">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.basicmanage.DepartmentManageTest">
+      	<methods>
+      	    <parameter name="dept_name" value="钢铁侠"></parameter>
+      	    
+      		<include name="deleteDeparmentWithMembers"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+    
+    
+   
+   <test name="deleteDeparment">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.basicmanage.DepartmentManageTest">
+      	<methods>
+      	    <parameter name="dept_name" value="5"></parameter>
+      	    
+      		<include name="deleteDeparment"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+    
+   <test name="addDeparment">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.basicmanage.DepartmentManageTest">
+      	<methods>
+      	    <parameter name="dept_name" value="部门3"></parameter>
+      	    
+      		<include name="addDeparment"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+    
+
+  <test name="basicVerify">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.basicmanage.BasicInformationTest">
+      	<methods>
+      	    <parameter name="school_jc" value="mgdz3"></parameter>
+      	    <parameter name="logo_url" value="F:\WebAutomation\\1.jpg"></parameter>
+      		<include name="basicVerify"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+    
+    
+      <test name="移除管理员">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.basicmanage.AuthorityManageTest">
+      	<methods>
+      	    <parameter name="account_id" value="liuhx"></parameter>
+      	    
+      		<include name="removeAdmin"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+ 
+        <test name="添加管理员">
+ 	<parameter name="user_name" value="t-mgdz3-00001"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+    <classes>
+      <class name="com.school.test.basicmanage.AuthorityManageTest">
+      	<methods>
+      	    <parameter name="admin_name" value="李笑"></parameter>
+      	    <parameter name="account_id" value="lntest1"></parameter>
+      	    
+      		<include name="addAdmin"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>  
+ -->  
+</suite> <!-- Suite -->
